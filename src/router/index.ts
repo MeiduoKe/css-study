@@ -91,6 +91,49 @@ const routes = [
             }
         ]
     }
+    ,
+    {
+        path: '/layout',
+        children: [
+            {
+                path: 'side',
+                name: 'TwoSide',
+                component: () => import('@/view/layout/TwoSide.vue'),
+            },
+            {
+                path: 'wing',
+                name: 'DoubleWing',
+                component: () => import('@/view/layout/DoubleWing.vue'),
+            }
+        ]
+    }
+    ,
+    {
+        path: '/shadow',
+        children: [
+            {
+                path: 'box',
+                name: 'BoxShadow',
+                component: () => import('@/view/shadow/BoxShadow.vue'),
+            },
+            {
+                path: 'both-side',
+                name: 'ImgBothSide',
+                component: () => import('@/view/shadow/ImgBothSide.vue'),
+            }
+        ]
+    }
+    ,
+    {
+        path: '/gradient',
+        children: [
+            {
+                path: 'line',
+                name: 'LineGradient',
+                component: () => import('@/view/gradient/LineGradient.vue'),
+            }
+        ]
+    }
 ]
 
 const router: Router = createRouter({

@@ -16,6 +16,11 @@
             <img src = "@/assets/images/2.jpg" alt = "filter opacity 透明度">
         </div>
 
+        <!-- filter opacity 透明度 -->
+        <div class = "demo-page-gray">
+            <img src = "@/assets/images/2.jpg" alt = "filter opacity 透明度">
+        </div>
+
     </div>
 </template>
 
@@ -75,12 +80,29 @@
 
 .demo-page-filter > img {
   transition: 1.5s;
-  filter: opacity(50%);
+  filter: opacity(10%);
 }
 
 .demo-page-filter > img:hover {
   transition: 1.5s;
   filter: opacity(100%);
+}
+
+.demo-page-gray {
+  margin: 1vh auto;
+  width: 70vw;
+  height: 85vh;
+  position: relative;
+}
+
+.demo-page-gray > img {
+  transition: 1.5s;
+  filter: grayscale(50%);
+}
+
+.demo-page-gray > img:hover {
+  transition: 1.5s;
+  filter: grayscale(100%);
 }
 
 
