@@ -172,6 +172,22 @@ const routes = [
             }
         ]
     }
+    ,
+    {
+        path: '/transition',
+        children: [
+            {
+                path: 'demo',
+                name: 'TransitionDemo',
+                component: () => import('@/view/transition/TransitionDemo.vue'),
+            },
+            {
+                path: 'clock',
+                name: 'ClockDemo',
+                component: () => import('@/view/transition/ClockDemo.vue'),
+            }
+        ]
+    }
 ]
 
 const router: Router = createRouter({
