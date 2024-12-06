@@ -139,6 +139,28 @@ const routes = [
             }
         ]
     }
+    ,
+    {
+        path: '/triangle',
+        children: [
+            {
+                path: 'inverted-triangle',
+                name: 'InvertedTriangle',
+                component: () => import('@/view/triangle/InvertedTriangle.vue'),
+            }
+        ]
+    }
+    ,
+    {
+        path: '/tips',
+        children: [
+            {
+                path: 'tip-demo',
+                name: 'TipDemo',
+                component: () => import('@/view/tips/TipDemo.vue'),
+            }
+        ]
+    }
 ]
 
 const router: Router = createRouter({
