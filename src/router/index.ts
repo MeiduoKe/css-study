@@ -12,6 +12,11 @@ const routes = [
                 path: 'style',
                 name: 'FontStudy',
                 component: () => import('@/view/font-style/font/FontStudy.vue'),
+            },
+            {
+                path: 'font-face',
+                name: 'FontFace',
+                component: () => import('@/view/font-style/font/FontFace.vue'),
             }
         ]
     },
