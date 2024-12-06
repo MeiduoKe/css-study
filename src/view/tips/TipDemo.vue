@@ -46,7 +46,7 @@
   width: 260px;
   height: 35px;
   line-height: 35px;
-  padding-left: 8px;
+  text-indent: 1em;
   background-color: #b83b5e;
 }
 </style>

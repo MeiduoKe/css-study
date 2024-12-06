@@ -8,7 +8,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     // 解析非相对模块的基础地址，默认是当前目录
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"

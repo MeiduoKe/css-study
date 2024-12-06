@@ -161,6 +161,17 @@ const routes = [
             }
         ]
     }
+    ,
+    {
+        path: '/page',
+        children: [
+            {
+                path: 'pagination',
+                name: 'Pagination',
+                component: () => import('@/view/page/Pagination.vue'),
+            }
+        ]
+    }
 ]
 
 const router: Router = createRouter({
